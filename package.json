@@ -1,7 +1,7 @@
 {
   "name": "google-play-scraper",
   "version": "8.1.0",
-  "description": "scrapes app data from google play store",
+  "description": "scrapes app data from google play work",
   "main": "index.js",
   "scripts": {
     "test": "mocha --timeout 5000",

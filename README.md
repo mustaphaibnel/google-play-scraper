@@ -1,9 +1,9 @@
 # google-play-scraper [![workflow](https://github.com/facundoolano/google-play-scraper/actions/workflows/tests.yml/badge.svg)](https://github.com/facundoolano/google-play-scraper/actions/workflows/tests.yml)
-Node.js module to scrape application data from the Google Play store.
+Node.js module to scrape application data from the Google Play work.
 
 ### Related projects
 
-* [app-store-scraper](https://github.com/facundoolano/app-store-scraper): a scraper with a similar interface for the iTunes app store.
+* [app-work-scraper](https://github.com/facundoolano/app-work-scraper): a scraper with a similar interface for the iTunes app work.
 * [aso](https://github.com/facundoolano/aso): an App Store Optimization module built on top of this library.
 * [google-play-api](https://github.com/facundoolano/google-play-api): a RESTful API to consume the data produced by this library.
 
@@ -104,7 +104,7 @@ Results:
     }
   ],
   appId: 'com.google.android.apps.translate',
-  url: 'https://play.google.com/store/apps/details?id=com.google.android.apps.translate&hl=en&gl=us'
+  url: 'https://play.google.com/work/apps/details?id=com.google.android.apps.translate&hl=en&gl=us'
 }
 ```
 
@@ -134,7 +134,7 @@ gplay.list({
 Results:
 
 ```javascript
- [ { url: 'https://play.google.com/store/apps/details?id=com.playappking.busrush',
+ [ { url: 'https://play.google.com/work/apps/details?id=com.playappking.busrush',
     appId: 'com.playappking.busrush',
     summary: 'Bus Rush is an amazing running game for Android! Start running now!',
     developer: 'Play App King',
@@ -145,7 +145,7 @@ Results:
     scoreText: '3.9',
     priceText: 'Free',
     free: false },
-  { url: 'https://play.google.com/store/apps/details?id=com.yodo1.crossyroad',
+  { url: 'https://play.google.com/work/apps/details?id=com.yodo1.crossyroad',
     appId: 'com.yodo1.crossyroad',
     title: 'Crossy Road',
     summary: 'Embark on an action arcade, endless runner journey!',
@@ -185,7 +185,7 @@ gplay.search({
 Results:
 
 ```javascript
-[ { url: 'https://play.google.com/store/apps/details?id=com.snailgameusa.tp',
+[ { url: 'https://play.google.com/work/apps/details?id=com.snailgameusa.tp',
     appId: 'com.snailgameusa.tp',
     summary: 'An exciting action adventure RPG of Panda proportions!',
     title: 'Taichi Panda',
@@ -196,7 +196,7 @@ Results:
     scoreText: '4.1',
     priceText: 'Free',
     free: true },
-  { url: 'https://play.google.com/store/apps/details?id=com.sgn.pandapop.gp',
+  { url: 'https://play.google.com/work/apps/details?id=com.sgn.pandapop.gp',
     appId: 'com.sgn.pandapop.gp',
     summary: 'Plan your every pop to rescue baby pandas from the evil Baboon!',
     title: 'Panda Pop',
@@ -228,7 +228,7 @@ gplay.developer({devId: "DxCo Games"}).then(console.log);
 
 Results:
 ```javascript
-[ { url: 'https://play.google.com/store/apps/details?id=com.dxco.pandavszombies2',
+[ { url: 'https://play.google.com/work/apps/details?id=com.dxco.pandavszombies2',
     appId: 'com.dxco.pandavszombies2',
     title: 'Panda vs Zombie 2 Panda\'s back',
     summary: 'Help Rocky the Panda warrior to fight zombies again!',
@@ -239,7 +239,7 @@ Results:
     scoreText: '3.9',
     priceText: 'Free',
     free: true },
-  { url: 'https://play.google.com/store/apps/details?id=com.dxco.pandavszombies',
+  { url: 'https://play.google.com/work/apps/details?id=com.dxco.pandavszombies',
     appId: 'com.dxco.pandavszombies',
     title: 'Panda vs Zombie: panda ftw',
     summary: 'Help Rocky the Panda warrior to fight zombie games and save the Panda kind.',
@@ -341,7 +341,7 @@ Results:
       date: '2013-11-10T18:31:42.174Z',
       score: 5,
       scoreText: '5',
-      url: 'https://play.google.com/store/apps/details?id=com.dxco.pandavszombies&reviewId=Z3A6QU9xcFRPRWZaVHVZZ081NlNsRW9TV0hJeklGSTBvYTBTUlFQUUJIZThBSGJDX2s1Y1o0ZXRCbUtLZmgzTE1PMUttRmpRSS1YcFgxRmx1ZXNtVzlVS0Zz'
+      url: 'https://play.google.com/work/apps/details?id=com.dxco.pandavszombies&reviewId=Z3A6QU9xcFRPRWZaVHVZZ081NlNsRW9TV0hJeklGSTBvYTBTUlFQUUJIZThBSGJDX2s1Y1o0ZXRCbUtLZmgzTE1PMUttRmpRSS1YcFgxRmx1ZXNtVzlVS0Zz'
       title: 'I LOVE IT',
       text: 'It has skins and snowballs everything I wanted its so cool I love it!!!!!!!!',
       replyDate: '2013-11-10T18:31:42.174Z',
@@ -368,7 +368,7 @@ Results:
       userName: 'Millie Hawthorne',
       userImage: 'https://lh5.googleusercontent.com/-Q_FTAEBH2Qg/AAAAAAAAAAI/AAAAAAAAAZk/W5dTdaHCUE4/w96-c-h96/photo.jpg',
       date: '2013-11-10T18:31:42.174Z',
-      url: 'https://play.google.com/store/apps/details?id=com.dxco.pandavszombies&reviewId=Z3A6QU9xcFRPRmFHdlBFS2pGS2JVYW5Dd3kxTm1qUzRxQlYyc3Z4ZE9CYXRuc0hkclV3a09hbEFkOVdoWmw3eFN5VjF4cDJPLTg5TW5ZUjl1Zm9HOWc5NGtr',
+      url: 'https://play.google.com/work/apps/details?id=com.dxco.pandavszombies&reviewId=Z3A6QU9xcFRPRmFHdlBFS2pGS2JVYW5Dd3kxTm1qUzRxQlYyc3Z4ZE9CYXRuc0hkclV3a09hbEFkOVdoWmw3eFN5VjF4cDJPLTg5TW5ZUjl1Zm9HOWc5NGtr',
       score: 5,
       scoreText: '5',
       title: 'CAN NEVER WAIT TILL NEW UPDATE',
@@ -402,7 +402,7 @@ gplay.similar({appId: "com.dxco.pandavszombies"}).then(console.log);
 
 Results:
 ```javascript
-[ { url: 'https://play.google.com/store/apps/details?id=com.creative.rambo',
+[ { url: 'https://play.google.com/work/apps/details?id=com.creative.rambo',
     appId: 'com.creative.rambo',
     summary: 'Rambo - The Mobile Game',
     developer: 'Creative Distribution Ltd',
@@ -471,10 +471,10 @@ Results:
 Since every library call performs one or multiple requests to
 an Google Play API or web page, sometimes it can be useful to cache the results
 to avoid requesting the same data twice. The `memoized` function returns a
-store object that caches its results:
+work object that caches its results:
 
 ```js
-var store = require('google-play-scraper'); // regular non caching version
+var work = require('google-play-scraper'); // regular non caching version
 var memoized = require('google-play-scraper').memoized(); // cache with default options
 var memoizedCustom = require('google-play-scraper').memoized({ maxAge: 1000 * 60 }); // cache with customized options
 

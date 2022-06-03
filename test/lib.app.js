@@ -68,7 +68,7 @@ describe('App method', () => {
   it('should fetch valid application data', () => {
     return gplay.app({ appId: 'com.sgn.pandapop.gp' })
       .then((app) => {
-        assert.equal(app.url, 'https://play.google.com/store/apps/details?id=com.sgn.pandapop.gp&hl=en&gl=us');
+        assert.equal(app.url, 'https://play.google.com/work/apps/details?id=com.sgn.pandapop.gp&hl=en&gl=us');
         assert.equal(app.genre, 'Puzzle');
         assert.equal(app.androidVersionText, '7.0 and up');
         validateAppDetails(app);
@@ -82,7 +82,7 @@ describe('App method', () => {
       lang: 'es'
     })
       .then((app) => {
-        assert.equal(app.url, 'https://play.google.com/store/apps/details?id=com.sgn.pandapop.gp&hl=es&gl=es');
+        assert.equal(app.url, 'https://play.google.com/work/apps/details?id=com.sgn.pandapop.gp&hl=es&gl=es');
         assert.equal(app.genre, 'Puzles');
         assert.equal(app.androidVersionText, '7.0 y versiones posteriores');
         assert.equal(app.available, true);
@@ -97,7 +97,7 @@ describe('App method', () => {
       lang: 'pt'
     })
       .then((app) => {
-        assert.equal(app.url, 'https://play.google.com/store/apps/details?id=com.sgn.pandapop.gp&hl=pt&gl=br');
+        assert.equal(app.url, 'https://play.google.com/work/apps/details?id=com.sgn.pandapop.gp&hl=pt&gl=br');
         assert.equal(app.genre, 'Quebra-cabeça');
         assert.equal(app.androidVersionText, '7.0 ou superior');
         assert.equal(app.available, true);
@@ -132,7 +132,7 @@ describe('App method', () => {
       .then((app) => {
         assert.equal(app.appId, 'com.sgn.pandapop.gp');
         assert.equal(app.title, 'Bubble Shooter: Panda Pop!');
-        assert.equal(app.url, 'https://play.google.com/store/apps/details?id=com.sgn.pandapop.gp&hl=es&gl=ar');
+        assert.equal(app.url, 'https://play.google.com/work/apps/details?id=com.sgn.pandapop.gp&hl=es&gl=ar');
         assert.isNumber(app.minInstalls);
 
         assert.equal(app.androidVersion, '7.0');
@@ -145,7 +145,7 @@ describe('App method', () => {
       .then((app) => {
         assert.equal(app.appId, 'com.sgn.pandapop.gp');
         assert.equal(app.title, 'Panda Pop! Jeu de tir à bulles');
-        assert.equal(app.url, 'https://play.google.com/store/apps/details?id=com.sgn.pandapop.gp&hl=fr&gl=fr');
+        assert.equal(app.url, 'https://play.google.com/work/apps/details?id=com.sgn.pandapop.gp&hl=fr&gl=fr');
         assert.isNumber(app.minInstalls);
 
         assert.equal(app.androidVersion, '7.0');
@@ -186,7 +186,7 @@ describe('App method', () => {
   });
 
   it('should fetch available false for an app is unavailable in country', () => {
-    return gplay.app({ appId: 'com.jlr.landrover.incontrolremote.appstore', country: 'tr' })
+    return gplay.app({ appId: 'com.jlr.landrover.incontrolremote.appwork', country: 'tr' })
       .then((app) => {
         assert.equal(app.available, false);
       });
